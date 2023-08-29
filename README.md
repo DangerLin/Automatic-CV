@@ -1,43 +1,30 @@
 # Automatic CV
 
-A library allowing easy control over EC-BioLogic devices via simple Python code. You can integrate this project with your automated robot (such as the OT-2 robot) to achieve automated electrochemical test tasks. At this stage, only the CV experiment can be tested through this library. Further electrochemical experiments are on the way and will be released in the following update.
+This project allows users to use simple Python code to control their EC-Biologic potentiostat for CV experiments. You can integrate this project with your automated robot (such as the OT-2 robot) to achieve automated electrochemical test tasks. At this stage, only the CV experiment can be tested through this library. Further electrochemical experiments are on the way and will be released in the following update.
+
+## How to use
+
+You don't need to have a programming background to use this library. Just follow the steps to install it on your PC: 
 
 > Install with `python -m pip install Automatic-CV`
 
-For details of techniques and parameters, please see: the official development user's guide: [EC-Lab Development Package.pdf](https://github.com/DangerLin/easy-biologic/blob/main/EC-Lab%20Development%20Package.pdf).
 
-### Biologic Program
-`Abstract Class`
-Represents a program to be run on a device.
+> ***Note***:
+> 1. Before installation, make sure 1) Python 3 has already been installed on your computer and, 2) you can use `-m pip install` to install Python packages.
+> 2. Since the EC-Biologic potentiostat can only be used under a Windows OS, you can only use this library in Windows OS.
 
-#### Methods
-+ **BiologicProgram( device, params, channels = None, autoconnect = True, barrier = None, stop_event = None, threaded = False ):** Creates a new program.
 
-+ **channel_state( channels = None ):** Returns the state of the channels.
+After installation, copy the code in the example (or from the test folder) to a text editor (such as Notepad on your computer), change the corresponding parameters to meet your requirement for your CV experiments, save it as a Python file (*e.g.*, example.py). Then open a Prompt window (such as Anaconda Prompt if you install your Python *via* Anaconda; or a Command Prompt), type the following command and press Enter:
 
-+ **on_data( callback, index = None ):** Registers a callback function to run when data is collected.
+> python example.py
 
-+ **run():** Runs the program.
+That's it!
 
-+ **stop():** Sets the stop event flag.
+For details of techniques and parameters, please see the official development user's guide: [EC-Lab Development Package.pdf]([https://github.com/DangerLin/easy-biologic/blob/main/EC-Lab%20Development%20Package.pdf](https://github.com/DangerLin/Automatic-CV/blob/main/EC-Lab%20Development%20Package.pdf)).
 
-+ **save_data( file, append = False, by_channel = False ):** Saves data to the given file.
+Enjoy!
 
-+ **sync():** Waits for barrier, if set.
-
-+ **_connect():** Connects to the device
-
-#### Properties
-+ **device:** BiologicDevice. <br>
-+ **params:** Passed in parameters. <br>
-+ **channels:** Device channels. <br>
-+ **autoconnect:** Whether connection to the device should be automatic or + not. <br>
-+ **barrier:** A threading.Barrier to use for channel syncronization. [See ProgramRummer] <br>
-+ **field_titles:** Column names for saving data. <br>
-+ **data:** Data collected during the program. <br>
-+ **status:** Status of the program. <br>
-+ **fields:** Data fields teh program returns. <br>
-+ **technqiues:** List of techniques the program uses.
+## Main
 
 ### Base Programs
 This project can be used to scan the `CV` experiment only. Further experiments, including `OCV`, `PEIS`, *etc.*, are on the way and will be released in the following update.
@@ -77,20 +64,6 @@ Performs a `CV` scan.
 
 + **average:** Average over points. 
 [Default: False]
-
-
-### Find Devices
-A convenience script for finding connected devices.
-
-#### Use
-From a terminal run `python -m automatic_cv.find_devices`.
-
-
-### EC Errors
-Implements EC errors.
-
-#### Classes
-+ **EcError( value = None, code = None, message = None )** 
 
 ## Example
 
