@@ -10,13 +10,13 @@ You don't need to have a programming background to use this library. Just follow
 
 
 > ***Note***:
-> 1. Before installation, make sure 1) Python 3 has already been installed on your computer and, 2) you can use `-m pip install` to install Python packages.
+> 1. Before installation, make sure 1) Python 3 has already been installed on your computer and 2) you can use `-m pip install` to install Python packages.
 > 2. Since the EC-Biologic potentiostat can only be used under a Windows OS, you can only use this library in Windows OS.
 
 
-After installation, copy the code in the example (or from the test folder) to a text editor (such as Notepad on your computer), change the corresponding parameters to meet your requirement for your CV experiments, save it as a Python file (*e.g.*, example.py). Then open a Prompt window (such as Anaconda Prompt if you install your Python *via* Anaconda; or a Command Prompt), type the following command and press Enter:
+After installation, copy the code in the example (or from the test folder) to a text editor (such as Notepad on your computer), change the corresponding parameters to meet your requirement for your CV experiments, save it as a Python file (*e.g.*, example.py). Then open a Prompt window (such as Anaconda Prompt if you install your Python *via* Anaconda, or a Command Prompt), type the following command, and press Enter:
 
-> python example.py
+> `python example.py`
 
 That's it!
 
