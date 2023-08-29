@@ -20,7 +20,7 @@ After installation, copy the code in the example (or from the test folder) to a 
 
 That's it!
 
-For details of techniques and parameters, please see the official development user's guide: [EC-Lab Development Package.pdf]([https://github.com/DangerLin/easy-biologic/blob/main/EC-Lab%20Development%20Package.pdf](https://github.com/DangerLin/Automatic-CV/blob/main/EC-Lab%20Development%20Package.pdf)).
+For details of techniques and parameters, please see the official development user's guide: [EC-Lab Development Package.pdf] ([https://github.com/DangerLin/easy-biologic/blob/main/EC-Lab%20Development%20Package.pdf](https://github.com/DangerLin/Automatic-CV/blob/main/EC-Lab%20Development%20Package.pdf)).
 
 Enjoy!
 
